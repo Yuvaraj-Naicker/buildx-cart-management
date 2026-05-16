@@ -352,3 +352,40 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
     justify-self: end;
   }
 }
+
+/* ─── Mock Product Tester (Dev Only) ─────────────────────────── */
+.mock-products {
+  background: #fffbeb;
+  border: 1px dashed #fbbf24;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.mock-products__label {
+  font-size: 0.8rem;
+  color: #92400e;
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+}
+
+.mock-products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.mock-products__btn {
+  padding: var(--space-2) var(--space-4);
+  background: #ffffff;
+  border: 1px solid #fbbf24;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #92400e;
+  transition: background 180ms ease;
+}
+
+.mock-products__btn:hover {
+  background: #fef3c7;
+}
