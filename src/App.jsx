@@ -1,5 +1,13 @@
+import React from 'react';
+import CartPage from './pages/CartPage';
+import './index.css';
+
 function App() {
-  return <div>Cart Management - BuildX 2026</div>;
+  return (
+    <main>
+      <CartPage />
+    </main>
+  );
 }
 
 export default App;
