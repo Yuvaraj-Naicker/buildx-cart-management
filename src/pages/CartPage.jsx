@@ -1,10 +1,8 @@
 import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import CartItem from '../components/CartItem';
 import CartSummary from '../components/CartSummary';
 import useCart from '../hooks/useCart';
-
+import { toast } from 'react-toastify';
 // ─── Mock Products (remove when PHP API is ready) ───
 const MOCK_PRODUCTS = [
   { id: 1, name: 'Wireless Headphones', price: 1299, image: 'https://picsum.photos/seed/headphones/80/80' },
@@ -34,8 +32,6 @@ const CartPage = () => {
 
   return (
     <div className="cart-page">
-      <ToastContainer position="top-right" autoClose={3000} />
-
       {/* ─── Mock Product Buttons for Testing ─── */}
       <div className="mock-products">
         <p className="mock-products__label">🧪 Test — Add Products to Cart:</p>

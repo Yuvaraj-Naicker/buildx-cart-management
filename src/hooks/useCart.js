@@ -31,8 +31,7 @@ const useCart = () => {
       const res = await getCart();
       setCartItems(res.data.items || []);
     } catch (err) {
-      // API not ready yet — fall back to localStorage silently
-      console.warn('API unavailable, using local cart.');
+      // PHP API not ready — use localStorage silently
     } finally {
       setLoading(false);
     }
